@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport meta tag for responsiveness -->
+  <title>My Virtual Pet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🐣 My Tamagotchi</h1>
+    <div id="pet">
+      <img id="pet-image" src="baby-happy.png" alt="Your Pet">
+    </div>
+    <div id="stats">
+      <p>Hunger: <span id="hunger">5</span>/10</p>
+      <p>Happiness: <span id="happiness">5</span>/10</p>
+    </div>
+    <div id="actions">
+      <button onclick="feedPet()">Feed 🍎</button>
+      <button onclick="playPet()">Play 🎾</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

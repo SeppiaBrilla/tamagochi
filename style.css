@@ -1,0 +1,93 @@
+/* style.css */
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  background: #fef6e4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#pet img {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+}
+
+#stats {
+  margin: 20px 0;
+  font-size: 1.5em;
+}
+
+#actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+button {
+  margin: 10px;
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #ffd6e8;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  flex: 1 1 120px; /* Allow buttons to shrink or grow */
+}
+
+button:hover {
+  background-color: #ffc0cb;
+}
+
+/* Mobile-first responsiveness */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  #stats {
+    font-size: 1.2em;
+  }
+
+  #actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 80%; /* Ensure buttons are not too large on small screens */
+  }
+
+  #pet img {
+    width: 120px; /* Scale down pet image for smaller screens */
+  }
+}
+
+/* Larger screens (tablet or desktop) */
+@media (min-width: 601px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  #stats {
+    font-size: 1.5em;
+  }
+
+  button {
+    font-size: 18px;
+  }
+}
+
